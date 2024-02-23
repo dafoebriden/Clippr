@@ -1,0 +1,12 @@
+Here is a list of TODO's 
+A. BACKEND: 
+1. clip schema - 
+  a. post 
+  b. get
+    i. get by id 
+    ii. get by id 
+  d. delete
+2. commenter schema
+3. comment schemas
+
+B. FRONTEND: 
