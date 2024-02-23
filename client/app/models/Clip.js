@@ -2,7 +2,7 @@ export class Clip {
 
     constructor(data) {
         this.clipId = data.id || data._id
-        this.author = data.author
+        this.author = data.author.id
         this.gifUrl = data.gifUrl
         this.caption = data.caption
         this.createdAt = new Date(data.createdAt)

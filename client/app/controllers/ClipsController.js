@@ -20,6 +20,7 @@ export class ClipsController {
 
     async getClips() {
         try {
+            console.log('clips controller')
             await clipsService.getClips()
         } catch (error) {
             Pop.error(error)
