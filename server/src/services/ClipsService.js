@@ -5,7 +5,7 @@ class ClipsService {
 
     async createClip(clipData) {
         const clip = await dbContext.Clips.create(clipData)
-        clip.populate('author')
+        await clip.populate('author', 'name picture')
         return clip
     }
 

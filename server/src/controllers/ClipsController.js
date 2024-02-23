@@ -11,9 +11,18 @@ export class ClipsController extends BaseController {
             .post('', this.createClip)
     }
 
+     /**
+   * This is the api controller for creating a Clip
+   * @param {import("express").Request} request 
+   * @param {import("express").Response} response
+   * @param {import("express").NextFunction} next 
+   */
     async createClip(request, response, next) {
         try {
             const clipData = request.body
+            // @ts-ignore
+            // takes the correct id from the bearer token, needs bearer token to create a clip
+            clipData.authorId = request.userInfo.id
             const newClip = await clipsService.createClip(clipData)
             response.send(newClip)
         } catch (error) {
