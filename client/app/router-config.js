@@ -13,7 +13,7 @@ export const router = new Router([
     view: 'app/views/HomeView.html'
   },
   {
-    path: '',
+    path: '#/profile',
     middleware: [AuthGuard],
     controllers: [ProfileController],
     view: 'app/views/ProfileView.html',

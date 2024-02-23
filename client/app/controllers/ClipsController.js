@@ -14,7 +14,7 @@ function _drawClips() {
 export class ClipsController {
 
     constructor() {
-        AppState.on('Account', this.getClips)
+        AppState.on('account', this.getClips)
         AppState.on('clips', _drawClips)
     }
 
