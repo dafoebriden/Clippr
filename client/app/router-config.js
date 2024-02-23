@@ -1,6 +1,7 @@
 import { AccountController } from "./controllers/AccountController.js";
 import { ClipsController } from "./controllers/ClipsController.js";
 import { HomeController } from "./controllers/HomeController.js";
+import { ProfileController } from "./controllers/ProfileController.js";
 import { AuthGuard } from "./services/AuthService.js";
 import { Router } from "./utils/Router.js";
 

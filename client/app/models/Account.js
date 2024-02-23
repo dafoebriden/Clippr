@@ -37,6 +37,12 @@ export class Account {
     `
   }
 
+  get ProfileHTMLTemplate() {
+    return `
+    
+    `
+  }
+
   get displayName() {
     return this.nickname || this.name
   }
