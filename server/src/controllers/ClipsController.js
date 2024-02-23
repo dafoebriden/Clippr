@@ -6,7 +6,7 @@ import BaseController from "../utils/BaseController.js";
 export class ClipsController extends BaseController {
 
     constructor() {
-        super('api/clip')
+        super('api/clips')
         this.router
             .post('', this.createClip)
     }
