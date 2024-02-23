@@ -20,12 +20,20 @@
   <header>
     <div class="container-fluid">
       <div class="row d-flex justify-content-between bg-primary">
-        <div class="col-1 d-flex  ju"><button class="btn" type="button"><i class="mdi mdi-home display-5"></i></button>
+        <div role="button" class="col-1 d-flex button">
+          <a href="/">
+            <i class="mdi mdi-home display-5 text-white">
+            </i>
+          </a>
         </div>
         <div class="col-2 d-flex align-items-center text center">
           <h1>Clipper</h1>
         </div>
-        <div class="col-1 d-flex align-items-center">
+        <div class="col-2 d-flex align-items-center justify-content-between">
+          <a href="#/profile">
+            <div role="button" class="d-flex p-0 m-0"><i
+                class="mdi mdi-account-circle display-5 p-0 button text-white me-2"></i>
+          </a>
           <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
         </div>
       </div>
