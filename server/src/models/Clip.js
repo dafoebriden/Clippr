@@ -11,3 +11,9 @@ export const ClipSchema = new Schema(
         toJSON: { virtuals: true }
     }
 )
+ClipSchema.virtual('author', {
+    localField: 'authorId',
+    foreignField: '_id',
+    ref: 'Account',
+    justOne: true
+})
