@@ -11,10 +11,10 @@ export const router = new Router([
     view: 'app/views/HomeView.html'
   },
   {
-    path: '#/account',
+    path: '',
     middleware: [AuthGuard],
-    controllers: [AccountController],
-    view: 'app/views/AccountView.html',
+    controllers: [ProfileController],
+    view: 'app/views/ProfileView.html',
   }
 ])
 
