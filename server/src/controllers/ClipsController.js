@@ -1,3 +1,4 @@
+import { Auth0Provider } from "@bcwdev/auth0provider";
 import { clipsService } from "../services/ClipsService.js";
 import BaseController from "../utils/BaseController.js";
 
@@ -8,6 +9,7 @@ export class ClipsController extends BaseController {
     constructor() {
         super('api/clips')
         this.router
+            .use(Auth0Provider.getAuthorizedUserInfo)
             .post('', this.createClip)
     }
 
