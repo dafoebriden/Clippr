@@ -18,24 +18,18 @@
 <body>
   <!-- SECTION -->
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light px-2">
-      <a class="navbar-brand" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ml-2">Clippr</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <!-- NAVLINKS -->
-          <a href="#/about" class="nav-link">About</a>
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-between bg-primary">
+        <div class="col-1 d-flex  ju"><button class="btn" type="button"><i class="mdi mdi-home display-5"></i></button>
+        </div>
+        <div class="col-2 d-flex align-items-center text center">
+          <h1>Clipper</h1>
+        </div>
+        <div class="col-1 d-flex align-items-center">
+          <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
         </div>
       </div>
-      <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
-    </nav>
+    </div>
   </header>
 
   <!-- SECTION -->
@@ -49,8 +43,16 @@
 
   <!-- SECTION -->
   <footer class="bg-dark text-light">
-    <div class="text-center no-select">
-      <p class="mb-0"><small>Made with 💖 by CodeWorks</small></p>
+    <div class="container-fluid m-0 p-0">
+      <div class="row bg-black text-white text-center">
+        <div class="col-12">
+          <i class="mdi mdi-facebook m-1"></i>
+          <i class="mdi mdi-twitter"></i>
+          <i class="mdi mdi-instagram"></i>
+          <i class="mdi mdi-twitch"></i>
+          <i class="mdi mdi-snapchat"></i>
+        </div>
+      </div>
     </div>
   </footer>
 
