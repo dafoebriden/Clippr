@@ -1,6 +1,6 @@
 /* BASIC STYLES HERE */
 body {
-  background-color: #ffeca6;
+  background-color: black;
 }
 
 .profile-picture {
@@ -48,8 +48,9 @@ button.neon:hover {
 }
 
 button.neon.yellow {
-  background-color: black;
-  color: #f4f134;
+  background-color: none;
+  color: white;
+  border-color: white;
 }
 
 button.neon.yellow:hover {
