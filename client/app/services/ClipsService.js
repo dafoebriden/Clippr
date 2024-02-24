@@ -6,7 +6,7 @@ class ClipsService {
     async getClips() {
         console.log('clips service');
         const response = await api.get('api/clips')
-        console.log('got birds', response.data)
+        console.log('got clips', response.data)
         const newClips = response.data.map(clipPOJO => new Clip(clipPOJO))
         AppState.clips = newClips
 
