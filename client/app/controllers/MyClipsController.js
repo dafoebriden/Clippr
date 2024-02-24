@@ -4,7 +4,7 @@ import { Pop } from "../utils/Pop.js"
 import { setHTML } from "../utils/Writer.js";
 
 function _drawMyClips() {
-    const clips = AppState.myClips
+    const clips = AppState.clips
     let htmlString = ''
     clips.forEach(clip => htmlString += clip.MyClipHTMLTemplate)
     setHTML('myClips', htmlString)

@@ -14,9 +14,14 @@ export const router = new Router([
   },
   {
     path: '#/profile',
-    middleware: [AuthGuard],
-    controllers: [ProfileController],
+    controllers: [ProfileController, ClipsController],
     view: 'app/views/ProfileView.html',
+  },
+  {
+    path: '#/account',
+    middleware: [AuthGuard],
+    controllers: [AccountController],
+    view: 'app/views/AccountView.html',
   }
 ])
 

@@ -27,4 +27,8 @@ export class ClipsController {
             console.error(error);
         }
     }
+
+    getClipsByProfileId(id) {
+        clipsService.getClipsByProfileId(id)
+    }
 }

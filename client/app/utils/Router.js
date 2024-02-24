@@ -16,11 +16,20 @@ class Route {
     if (typeof routeConfig.path != 'string') {
       throw Pop.error('[ROUTE_ERROR::INVALID_ROUTE] No path was specified for route')
     }
+    let path = routeConfig.path
+    this.params = {}
+    if (routeConfig.path.includes(':')) {
+      let i = routeConfig.path.indexOf(':')
+      path = routeConfig.path.slice(0, i - 1)
+      let key = routeConfig.path.slice(i + 1)
+      this.params[key] = ''
+    }
     this.path = routeConfig.path
     this.target = routeConfig.target || '#router-view'
     this.middleware = routeConfig.middleware || []
     this.controllers = routeConfig.controllers || []
     this.view = routeConfig.view || ''
+
     this.template = ''
     this.loadTemplate()
   }
@@ -67,6 +76,12 @@ export class Router {
   }
 
   async handleRouteChange() {
+
+    let params = {}
+    let path = location.hash
+    console.log(path)
+
+
     const currentRoute = this.routes.find(r => r.path == location.hash)
     if (!currentRoute) {
       Pop.error('404 No Matching Route Found for ' + location.hash)

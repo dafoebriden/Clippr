@@ -42,7 +42,7 @@ export class Account {
 <div class="container">
 <div class="row my-2">
     <div class="col-11 col-md-8 col-lg-4 mt-4 text-center rounded bg-white">
-        <img class="mx-auto my-2 rounded" src="${this.picture}" alt="Profile Photo" style="width: 80%">
+        <img class="mx-auto mt-3 mb-2 rounded-circle" src="${this.picture}" alt="Profile Photo" style="width: 90%">
         <h1 class="p-0 mx-auto text-black">${this.displayName}</h1>
     </div>
     <div class="col-11 d-flex justify-content-end">

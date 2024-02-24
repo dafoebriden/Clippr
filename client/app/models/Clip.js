@@ -16,7 +16,9 @@ export class Clip {
 
         <div class="d-flex justify-content-between align-items-center m-3">
                 <h1>${this.author.name}</h1>
-                <img class="small-profile-image" src="${this.author.picture}">
+                <a href="#/profile" onclick="app.ClipsController.getClipsByProfileId('${this.author.id}')">
+                    <img class="small-profile-image" src="${this.author.picture}">
+                </a>
             </div>
             <div>
                 <img class="clip-image" src="${this.gifUrl}"

@@ -8,7 +8,7 @@ class MyClipsService {
         const response = await api.get('api/userId/clips')
         console.log('got clips', response.data)
         const newClips = response.data.map(clipPOJO => new Clip(clipPOJO))
-        AppState.myClips = newClips
+        AppState.clips = newClips
 
     }
 }
