@@ -40,20 +40,12 @@ export class Account {
   get ProfileHTMLTemplate() {
     return `
 <div class="container">
-<div class="row my-2">
+  <div class="row my-2">
     <div class="col-11 col-md-8 col-lg-4 mt-4 text-center rounded bg-white">
         <img class="mx-auto mt-3 mb-2 rounded-circle" src="${this.picture}" alt="Profile Photo" style="width: 90%">
         <h1 class="p-0 mx-auto text-black">${this.displayName}</h1>
     </div>
     <div class="col-11 d-flex justify-content-end">
-
-        <div>
-            <button onclick="app.ClipsController.createClip()"
-                class="btn fw-bold p-0 d-flex align-items-center neon yellow" role="button" ;"><i
-                    class="mdi mdi-plus fs-4"></i>
-                <p class="m-0 pe-1">Create Clip</p>
-            </button>
-        </div> <!--double check this is right ^^^^^^^^^^^^ -->
     </div>
 </div>
 `
