@@ -25,12 +25,12 @@ C. ORGANIZE:
 
 
 Backend Flow Figma:
-https://www.figma.com/file/ZvFdheib2oVVZWURmmoGIl/Untitled-(Copy)?type=whiteboard&node-id=1%3A1281&t=QY68KTtD64ce7r2p-1
+[https://www.figma.com/file/ZvFdheib2oVVZWURmmoGIl/Untitled-(Copy)?type=whiteboard&node-id=1%3A1281&t=QY68KTtD64ce7r2p-1]
 
 GitHub Repo Refrences:
 
-[gregslist week 5] https://github.com/CodeWorks-FullStack/winter24_gregslist_api
-[bird brain] https://github.com/CodeWorks-FullStack/winter24_birdBrain
+gregslist week 5 [https://github.com/CodeWorks-FullStack/winter24_gregslist_api]
+bird brain [https://github.com/CodeWorks-FullStack/winter24_birdBrain]
 
 CodeWorks: 
 Goals
