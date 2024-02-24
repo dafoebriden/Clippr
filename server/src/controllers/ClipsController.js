@@ -11,14 +11,15 @@ export class ClipsController extends BaseController {
         this.router
             .use(Auth0Provider.getAuthorizedUserInfo)
             .post('', this.createClip)
+            .get('', this.getClips)
     }
 
-     /**
-   * This is the api controller for creating a Clip
-   * @param {import("express").Request} request 
-   * @param {import("express").Response} response
-   * @param {import("express").NextFunction} next 
-   */
+    /**
+  * This is the api controller for creating a Clip
+  * @param {import("express").Request} request 
+  * @param {import("express").Response} response
+  * @param {import("express").NextFunction} next 
+  */
     async createClip(request, response, next) {
         try {
             const clipData = request.body
@@ -27,6 +28,15 @@ export class ClipsController extends BaseController {
             clipData.authorId = request.userInfo.id
             const newClip = await clipsService.createClip(clipData)
             response.send(newClip)
+        } catch (error) {
+            next(error)
+        }
+    }
+
+    async getClips(request, response, next) {
+        try {
+            const clips = await clipsService.getClips()
+            response.send(clips)
         } catch (error) {
             next(error)
         }
