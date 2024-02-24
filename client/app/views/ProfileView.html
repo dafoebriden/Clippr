@@ -1,13 +1,18 @@
 <div class="container">
     <div class="row my-2">
-        <div class="col-11 col-md-8 col-lg-4 mx-auto mt-4 d-flex justify-content-start ">
+        <div class="col-11 col-md-8 col-lg-4 mt-4 text-center">
             <img class="mx-auto" src="/assets/img/ClipperLogo.png" alt="Profile Photo" style="width: 80%">
+            <h1 class="p-0 mx-auto">Profile Name</h1>
         </div>
-        <div class="col-11">
-            <h1>Profile Name</h1>
+        <div class="col-11 d-flex justify-content-end">
+
             <div>
-                <button></button>
-            </div>
+                <button onclick="app.ClipsController.createClip()"
+                    class="btn fw-bold p-0 d-flex align-items-center neon yellow" role="button" ;"><i
+                        class="mdi mdi-plus fs-4"></i>
+                    <p class="m-0 pe-1">Create Clip</p>
+                </button>
+            </div> <!--double check this is right ^^^^^^^^^^^^ -->
         </div>
     </div>
     <div id="myClips" class="row">
