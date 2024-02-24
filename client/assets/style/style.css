@@ -16,3 +16,8 @@
   height: 33vh;
   object-fit: cover;
 }
+
+.small-profile-image {
+  border-radius: 50%;
+  height: 6vh;
+}

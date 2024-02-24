@@ -2,7 +2,7 @@ export class Clip {
 
     constructor(data) {
         this.clipId = data.id || data._id
-        this.author = data.author.id
+        this.author = data.author
         this.gifUrl = data.gifUrl
         this.caption = data.caption
         this.createdAt = new Date(data.createdAt)
@@ -16,7 +16,7 @@ export class Clip {
 
         <div class="d-flex justify-content-between align-items-center m-3">
                 <h1>${this.author.name}</h1>
-                <p class="display-3">${this.author.picture}</p>
+                <img class="small-profile-image" src="${this.author.picture}">
             </div>
             <div>
                 <img class="clip-image" src="${this.gifUrl}"
