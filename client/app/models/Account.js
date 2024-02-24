@@ -42,8 +42,8 @@ export class Account {
 <div class="container">
 <div class="row my-2">
     <div class="col-11 col-md-8 col-lg-4 mt-4 text-center rounded bg-white">
-        <img class="mx-auto my-2 rounded" src="/assets/img/ClipperLogo.png" alt="Profile Photo" style="width: 80%">
-        <h1 class="p-0 mx-auto text-black">Profile Name</h1>
+        <img class="mx-auto my-2 rounded" src="${this.picture}" alt="Profile Photo" style="width: 80%">
+        <h1 class="p-0 mx-auto text-black">${this.displayName}</h1>
     </div>
     <div class="col-11 d-flex justify-content-end">
 
