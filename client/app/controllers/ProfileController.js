@@ -4,7 +4,7 @@ import { setHTML } from "../utils/Writer.js"
 export class ProfileController {
     _drawProfile() {
         if (!AppState.account) { return }
-        setHTML('profile', AppState.account.ProfileHTMLTemplate)
+        setHTML('profileView', AppState.account.ProfileHTMLTemplate)
     }
 
     constructor() {

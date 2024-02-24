@@ -31,4 +31,24 @@ export class Clip {
         `
     }
 
+
+    get MyClipHTMLTemplate() {
+        return `
+        <div  class="col-md-3 w-75 card px-3 mb-5">
+            <div class="d-flex justify-content-between align-items-center m-3">
+                    <h1>${this.author.name}</h1>
+                    <img class="small-profile-image" src="${this.author.picture}">
+                </div>
+                <div>
+                    <img class="clip-image" src="${this.gifUrl}"
+                        alt="vine">
+                </div>
+                <p class="my-2 fs-5 ">${this.caption}</p>
+            <div class="d-flex justify-content-between">
+                <p class="display-3 border rounded-3">👍 👎 💖</p>
+                <p class="display-3 border rounded-3">➕</p>
+            </div>
+        </div>
+    `
+    }
 }

@@ -37,13 +37,29 @@ export class Account {
     `
   }
 
-
-
   get ProfileHTMLTemplate() {
     return `
-    
-    `
+<div class="container">
+<div class="row my-2">
+    <div class="col-11 col-md-8 col-lg-4 mt-4 text-center rounded bg-white">
+        <img class="mx-auto my-2 rounded" src="/assets/img/ClipperLogo.png" alt="Profile Photo" style="width: 80%">
+        <h1 class="p-0 mx-auto text-black">Profile Name</h1>
+    </div>
+    <div class="col-11 d-flex justify-content-end">
+
+        <div>
+            <button onclick="app.ClipsController.createClip()"
+                class="btn fw-bold p-0 d-flex align-items-center neon yellow" role="button" ;"><i
+                    class="mdi mdi-plus fs-4"></i>
+                <p class="m-0 pe-1">Create Clip</p>
+            </button>
+        </div> <!--double check this is right ^^^^^^^^^^^^ -->
+    </div>
+</div>
+`
   }
+
+
 
   get displayName() {
     return this.nickname || this.name
