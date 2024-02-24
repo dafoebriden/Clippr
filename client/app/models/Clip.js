@@ -12,11 +12,11 @@ export class Clip {
 
     get ClipHtmlTemplate() {
         return `
-        <div  class="col-md-6 w-75 card px-3 mb-5">
+        <div  class="col-md-3 w-75 card px-3 mb-5">
 
         <div class="d-flex justify-content-between align-items-center m-3">
-                <h1>author name</h1>
-                <p class="display-3">😊</p>
+                <h1>${this.author.name}</h1>
+                <p class="display-3">${this.author.picture}</p>
             </div>
             <div>
                 <img class="clip-image" src="${this.gifUrl}"
