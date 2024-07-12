@@ -2,6 +2,7 @@ import { AppState } from "../AppState.js"
 import { clipsService } from "../services/ClipsService.js"
 import { Pop } from "../utils/Pop.js"
 import { setHTML } from "../utils/Writer.js";
+import { getFormData } from "../utils/FormHandler.js";
 
 function _drawClips() {
     const clips = AppState.clips
@@ -26,6 +27,24 @@ export class ClipsController {
             Pop.error(error)
             console.error(error);
         }
+    }
+
+    async createClip() {
+        try {
+            event.preventDefault()
+            const form = event.target
+            console.log('form', form)
+            const clipFormData = getFormData(form)
+            console.log(clipFormData);
+            await clipsService.createClip(clipFormData)
+            Pop.success('Successful Clip')
+            // @ts-ignore
+            form.reset()
+        } catch (error) {
+            Pop.error(error)
+            console.error(error);
+        }
+
     }
 
     getClipsByProfileId(id) {
